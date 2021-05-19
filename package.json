@@ -2,14 +2,33 @@
   "name": "memories",
   "version": "0.1.0",
   "private": true,
+  "main": "main.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "electron-start": "electron .",
+    "lint": "eslint --fix ."
   },
   "dependencies": {
+    "babel-plugin-styled-components": "^1.11.1",
+    "electron": "^11.1.0",
+    "immer": "^9.0.1",
     "next": "10.0.3",
+    "next-images": "^1.6.0",
+    "prismjs": "^1.22.0",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "styled-components": "^5.1.1",
+    "use-immer": "^0.5.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.14.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0"
   }
 }
